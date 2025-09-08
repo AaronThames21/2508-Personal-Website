@@ -1,0 +1,17 @@
+* {
+    padding: 0%;
+}
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+}
+.nav-links li {
+    list-style: none;
+}
