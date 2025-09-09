@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>title</title>
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="contact.css".css">
   </head>
-  <link rel="stylesheet" href="styles.css" />
   <body>
     <header>
       <nav class="main-nav">
@@ -18,20 +18,21 @@
       </nav>
     </header>
     <main>
-      <div class="top-portion">
-        <div class="text-content">
-          <h2>Developer, Filmmaker, Creative</h2>
-          <p>
-            A former Army officer seeking to leverage his passion and experience
-            within the I.T. sector
-          </p>
-        </div>
-        <img src="assets/headshot/AJ1.jpg" alt="Picture of Aaron" srcset="" />
-      </div>
-      <h3 class="qoute">
-        "Hold fast to dreams, for if dreams die, life is a broken-winged bird
-        that cannot fly." - Langston Hughes
-      </h3>
+      <section class="contact-section">
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="thankyou.html" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <br />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+          <br />
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
     </main>
     <footer class="footer">
       <a href="vimeo.com"
@@ -45,7 +46,10 @@
           alt=""
           srcset="" /></a
       ><a href="instagram.com"
-        ><img src="assets/footer-social-media-logos/instagram.png" alt="" srcset=""
+        ><img
+          src="assets/footer-social-media-logos/instagram.png"
+          alt=""
+          srcset=""
       /></a>
     </footer>
   </body>
