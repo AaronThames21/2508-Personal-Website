@@ -22,15 +22,15 @@
     text-decoration: none;
     color: white;
 }
-section {
-    padding-bottom: 40rem;
-    padding-left: 3rem;
-    align-items: center;
+main {
+    display: grid;
+    place-items: center;
+    padding: 2rem 1rem;
+}
 }
 .contact-section {
-    max-width: 600px;
+    max-width: 900px;
     margin: 3rem auto;
-    padding-right: 20rem;
 }
 .contact-section h2 {
     text-align: center;
@@ -38,10 +38,17 @@ section {
 .contact-form {
     display: flex;
     flex-direction: column;
+    width: 450px;
+    
     
 }
 .contact-form label {
     font-weight: bold;
+}
+.contact-form button {
+    background-color: black;
+    color: white;
+    cursor: pointer;
 }
 .footer {
     display: flex;
@@ -58,6 +65,23 @@ section {
 }
 @media (max-width: 700px) {
     .contact-section {
+        flex-direction: column;
         text-align: center;
         align-items: center;
     }
+    .main-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  .nav-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+       .footer {
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+}
